@@ -1,0 +1,36 @@
+<html>
+<head>
+<script type="text/javascript1.2">
+function init() {
+  var f = document.getElementById("vikatan_login");
+  /*
+  f.user_id.value = 'dasarathy@hotmail.com';
+  f.password.value = '';
+  */
+  f.login_username.value = 'dasarathy@hotmail.com';
+  f.login_password.value = 'm@JR&R8XV$80';
+  f.submit();
+}
+</script>
+</head>
+<body onload="javascript:init(); return(false);">
+<!--
+<form name="vikatan_login" id="vikatan_login" method="POST" action="https://ssl.vikatan.com/auth/secure_login.php?">                    
+<input type="email" name="user_id" id="user_id" placeholder="Email Id" value="" required>
+<input type="password" name="password" id="password" placeholder="Password" required>
+<input type="checkbox" id="subscribe-remember" name="remember_me" value="1">
+<input type="submit" name="submit_login" id="submit_login" value="Continue">
+<input type="hidden" name="act" value="lin">                    
+</form>
+-->
+<form name="vikatan_login" id="vikatan_login" method="POST" action="https://login.vikatan.com/configs/authenticate.php">                    
+<input type="hidden" name="action" id="action" placeholder="login" value="login" required>
+<input type="hidden" name="login_username" id="login_username" placeholder="login_username" value="" required>
+<input type="hidden" name="login_password" id="login_password" placeholder="login_password" required>
+<input type="checkbox" id="subscribe-remember" name="remember_me" value="1">
+<input type="submit" name="submit_login" id="submit_login" value="Continue">
+<input type="hidden" name="act" value="lin">                    
+<input type="hidden" name="redirect" value="https://www.vikatan.com">                    
+</form>
+</body>
+</html>
